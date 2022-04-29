@@ -8,6 +8,6 @@ void	bodycomposition(double weight, char gender, double age)
 
 	fat = pollock3d(gender, age);
 	absolutefat = weight * fat / 100;
-	leanmass = weight - fat;
+	leanmass = weight - absolutefat;
 	printf("%%Fat: %.2lf%%       Fat in Kg: %.1lfKg\nLeanmass: %.1lfKg\n", fat, absolutefat, leanmass);
 }
