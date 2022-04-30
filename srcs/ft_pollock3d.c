@@ -19,9 +19,9 @@ double	pollock3d(char gender, double age)
 		printf("type your cotan folds in the following sequence (triceps, suprailiac and thigh):\n");
 		scanf("%lf, %lf, %lf", &skinfolds1, &skinfolds2, &skinfolds3);
 		skinfolds1 = skinfolds1 + skinfolds2 + skinfolds3;
-		fat = 1.0994921 - 0.0009929 * skinfolds1 + 0.0000023 * (skinfolds1 * skinfolds1) - 0.0001392 * age;
+		fat = 1.0994921 - 0.0009929 * skinfolds1 + 0.0000023 * (skinfolds1 * skinfolds1) - 0.0001392 * age;/*need fix*/
 		
 	}
-	fat = ((4.95/ fat) - 4.50) * 100;
+	fat = ((4.95 / fat) - 4.50) * 100;
 	return (fat);
 }

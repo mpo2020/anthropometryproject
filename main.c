@@ -20,7 +20,7 @@ int	main(void)
 	printf("Do you want to do a full body composition assessment? y(yes) or n(no)\n");
 	scanf("%s", &choice);
 	printf("Height: %.2lf m      Weight: %.1lf Kg\n", height / 100, weight);
-	printf("Your BMI is: %.2lf %s\n age: %.0lf\n", bmi(height, weight), bmianalysis(bmi(height, weight)), age);
+	printf("Your BMI is: %.2lf %s\n age: %.0lf years\n", bmi(height, weight), bmianalysis(bmi(height, weight)), age);
 	if (choice == 'y' || choice == 'Y')
 	{
 		bodycomposition(weight, gender, age);
